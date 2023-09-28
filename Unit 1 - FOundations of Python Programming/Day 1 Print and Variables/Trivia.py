@@ -1,0 +1,6 @@
+print("Question: 1+1?")
+print("a: 3")
+print("b: 6")
+print("c: 2")
+print("d: 374893728495847")
+print("correct answer: 2!")
