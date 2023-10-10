@@ -3,9 +3,22 @@ opponents_name1 = "Abraham"
 opponents_name2 = "Arees"
 opponents_name3 = "Ishaan"
 opponents_name4 = "Brandon"
-your_total = input("Enter total here: ")
-opponents_total = input("Enter total here: ")
+your_total = int(input("Enter total here: "))
+opponents_total = int(input("Enter opponents total here: "))
 overall = your_total + opponents_total
+round_one = int(input("Input your round one points here: "))
+round_two = int(input("Input your round two points here: "))
+round_three = int(input("Input your round three points here: "))
+round_four = int(input("Input your round four points here: "))
+opp_r_four = int(input("Input opponents round four points here: "))
+opp_r_three = int(input("Input opponents round three points here: "))
+opp_r_two = int(input("Input opponents round two points here: "))
+opp_r_one = int(input("Input opponents round one points here: "))
+bp = int(round_one + opp_r_one)
+bp2 = int(round_two + opp_r_two)
+bp3 = int(round_three + opp_r_three)
+bp4 = int(round_four + opp_r_four)
+
 
 
 print(" ")
@@ -45,12 +58,13 @@ print("Dots and Boxes Table Tracker:")
 print(" ")
 print(f"Player Name: {name}")
 
-print("")
-print("")
-print("")
-print("")
-print("")
-print("")
+print("Opponent         Your Points          Opponents Points                    Total ")
+print("===============================================================================")
+print(f"{opponents_name1} {round_one:>20} {opp_r_one:>26} {bp:>23}")
+print(f"{opponents_name2} {round_two:>22} {opp_r_two:>26} {bp2:>23}")
+print(f"{opponents_name3} {round_three:>21} {opp_r_three:>26} {bp3:>23}")
+print(f"{opponents_name4} {round_four:>20} {opp_r_four:>26} {bp4:>23}")
+print("===============================================================================")
 print(" ")
 print("Summary: ")
 print(" ")
